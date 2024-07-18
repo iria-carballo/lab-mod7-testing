@@ -3,13 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" type="text/css" href="/src/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
   <body>
     <div id="app">
-      <h1>TypeScript Sandbox</h1>
-    </div>
+
+      <div class="top-bar">
+        <button id="nuevaPartida" class="dark-button">Nueva partida</button>
+      </div>
+
+      <div class="content">
+
+        <div class="container" id="titulo">
+          <h1>🃏 Juego de las siete media 🃏</h1>
+        </div>
+
+        <div class="container" id="score">
+          <div id="mensaje"></div>
+          <div id="puntos"><p></p></div>
+        </div>
+
+        <div class="container">
+          <div class="carta">
+            <img id="nuevaCarta"  src="./assets/img/back.jpg" alt="carta boca abajo">
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="buttons">
+            <button id="mePlanto" class="red-button">Me planto</button>
+            <button id="pideCarta" class="green-button">Pide carta</button>
+          </div>
+          <div>
+            <button id="queHabriaPasado" class="dark-button">¿Quieres saber qué habría pasado?</button>
+          </div>
+        </div>
+
+        <div class="instrucciones">
+          <h2>Intrucciones del juego</h2>
+          <p>El objetivo del juego es conseguir sumar 7.5 sin pasarte.</p>
+          <h3>Controles</h3>
+          <ul>
+            <li>Pide carta: Recibe una nueva carta para sumar puntos.</li>
+            <li>Me planto: Termina tu turno con los puntos actuales.</li>
+          </ul>
+          <h3>Mecánica</h3>
+          <p>Las cartas del 1 al 7 suman su valor numérico. Las figuras (sota, caballo, rey) valen 0.5 puntos cada una.</p>
+        </div>
+
+      </div>
+
+  </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

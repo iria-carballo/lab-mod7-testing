@@ -12,86 +12,145 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+*{
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
-  min-width: 320px;
+  width: 100%;
   min-height: 100vh;
+  background-color: #ffffff;
+  color: darkslategray;
 }
 
+
 h1 {
-  font-size: 3.2em;
+  font-size: 2em;
+  text-transform: uppercase;
   line-height: 1.1;
 }
 
 #app {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.top-bar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
-}
-
-.card {
-  padding: 2em;
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
 }
 
-.read-the-docs {
-  color: #888;
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
 }
+
+#puntos {
+  background-color: rgb(255, 188, 188);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid darkred;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(95, 0, 0);
+}
+
+#mensaje{
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 25ch;
+  line-height: 140%;
+  padding-bottom: 2rem;
+}
+
+
+.carta{
+  height: 319px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.instrucciones {
+  padding: 2rem 4rem 2rem 4rem;
+  background-color: rgb(244, 249, 255);
+  border: 1px solid rgb(198, 205, 211);
+  border-radius: 2rem;
+}
+
+.instrucciones p, h2, h3, li  {
+  max-width: 50ch;
+  text-align: left;
+}
+
+.instrucciones h2{
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.instrucciones h3{
+  font-size: 1em;
+}
+
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+.red-button {
+  background-color: darkred;
+  color: white;
+}
+
+.green-button {
+  background-color: darkgreen;
+  color: white;
+}
+
+.dark-button{
+  background-color: rgb(16, 27, 27);
+  color: white;
+}
 button:hover {
-  border-color: #646cff;
+  border-color: coral;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:disabled{
+background-color: lightgray;
+color: grey
 }
+
+
