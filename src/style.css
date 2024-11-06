@@ -12,10 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -30,7 +29,6 @@ body {
   color: darkslategray;
 }
 
-
 h1 {
   font-size: 2em;
   text-transform: uppercase;
@@ -42,25 +40,25 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.top-bar{
+.top-bar {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-.content{
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 3rem;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,7 +75,7 @@ h1 {
   color: rgb(95, 0, 0);
 }
 
-#mensaje{
+#mensaje {
   font-size: 2rem;
   font-weight: 600;
   max-width: 25ch;
@@ -85,12 +83,12 @@ h1 {
   padding-bottom: 2rem;
 }
 
-
-.carta{
+.carta {
   height: 319px;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .instrucciones {
@@ -100,20 +98,22 @@ h1 {
   border-radius: 2rem;
 }
 
-.instrucciones p, h2, h3, li  {
+.instrucciones p,
+h2,
+h3,
+li {
   max-width: 50ch;
   text-align: left;
 }
 
-.instrucciones h2{
+.instrucciones h2 {
   font-size: 1em;
   text-transform: uppercase;
 }
 
-.instrucciones h3{
+.instrucciones h3 {
   font-size: 1em;
 }
-
 
 button {
   border-radius: 8px;
@@ -136,7 +136,7 @@ button {
   color: white;
 }
 
-.dark-button{
+.dark-button {
   background-color: rgb(16, 27, 27);
   color: white;
 }
@@ -148,9 +148,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-button:disabled{
-background-color: lightgray;
-color: grey
+button:disabled {
+  background-color: lightgray;
+  color: grey;
 }
-
-
