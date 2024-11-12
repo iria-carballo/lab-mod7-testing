@@ -110,11 +110,12 @@ function mostrarPuntuacion(): void {
       .padStart(2, "0")}`;
   }
 }
+const mensajeContainer = document.getElementById("mensaje");
 
 const mostrarMensaje = () => {
-  if (partida.mensajeContainer instanceof HTMLDivElement) {
-    partida.mensajeContainer.style.display = "flex";
-    partida.mensajeContainer.innerHTML = partida.mensaje;
+  if (mensajeContainer instanceof HTMLDivElement) {
+    mensajeContainer.style.display = "flex";
+    mensajeContainer.innerHTML = partida.mensaje;
   }
 };
 

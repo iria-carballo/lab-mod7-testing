@@ -36,6 +36,7 @@ export const generaNumeroAleatorio = () => {
   return Math.floor(Math.random() * 10) + 1;
 };
 
+//probar
 export const generaCarta = (numeroAleatorio: number) => {
   if (numeroAleatorio > 7) {
     return numeroAleatorio + 2;
@@ -83,6 +84,7 @@ export const dameUrlCarta = (carta: number) => {
   }
 };
 
+//probar
 export const obtenerPuntos = (carta: number) => {
   if (carta > 7) {
     return 0.5;
@@ -100,9 +102,15 @@ export const desactivarPuntos = (puntosNuevos: number) => {
 };
 
 export const comprobarPartida = () => {
-  if (partida.puntuacion === 7.5 || partida.puntuacion > 7.5) {
+  if (partida.puntuacion === 7.5) {
     generarMensajeFinPartida();
+    return "Partida ganada";
   }
+  if (partida.puntuacion > 7.5) {
+    generarMensajeFinPartida();
+    return "Partida perdida";
+  }
+  return "Partida en curso";
 };
 
 export function generarMensajeFinPartida() {
